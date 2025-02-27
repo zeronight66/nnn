@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر الملابس</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .hero {
+            background-image: url('hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+        .hero button {
+            background-color: #ff4757;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .products {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 20px;
+            flex-wrap: wrap;
+        }
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 22%;
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .product-card h3 {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+        .product-card p {
+            font-size: 16px;
+            color: #555;
+        }
+        .product-card button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        .footer a {
+            color: #ff4757;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الشريط العلوي -->
+    <div class="navbar">
+        <div>
+            <a href="#">الرئيسية</a>
+            <a href="#">رجالي</a>
+            <a href="#">نسائي</a>
+            <a href="#">أطفال</a>
+        </div>
+        <div>
+            <a href="#">تسجيل الدخول</a>
+            <a href="#">عربة التسوق</a>
+        </div>
+    </div>
+
+    <!-- قسم العرض الرئيسي -->
+    <div class="hero">
+        <h1>أحدث صيحات الموضة</h1>
+        <p>اكتشف مجموعتنا الجديدة من الملابس والأحذية والإكسسوارات</p>
+        <button>تسوق الآن</button>
+    </div>
+
+    <!-- قسم المنتجات -->
+    <div class="products">
+        <div class="product-card">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>تيشيرت رجالي</h3>
+            <p>تيشيرت بسيط وأنيق للرجال.</p>
+            <button>أضف إلى السلة</button>
+        </div>
+        <div class="product-card">
+            <img src="product2.jpg" alt="Product 2">
+            <h3>فستان نسائي</h3>
+            <p>فستان أنيق للسهرات والمناسبات.</p>
+            <button>أضف إلى السلة</button>
+        </div>
+        <div class="product-card">
+            <img src="product3.jpg" alt="Product 3">
+            <h3>جاكيت جلد</h3>
+            <p>جاكيت جلد طبيعي للرجال.</p>
+            <button>أضف إلى السلة</button>
+        </div>
+        <div class="product-card">
+            <img src="product4.jpg" alt="Product 4">
+            <h3>حذاء رياضي</h3>
+            <p>حذاء رياضي مريح للرجال.</p>
+            <button>أضف إلى السلة</button>
+        </div>
+    </div>
+
+    <!-- التذييل -->
+    <div class="footer">
+        <p>© 2023 متجر الملابس. جميع الحقوق محفوظة.</p>
+        <p><a href="#">سياسة الخصوصية</a> | <a href="#">شروط الاستخدام</a></p>
+    </div>
+
+</body>
+</html>
